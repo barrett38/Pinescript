@@ -2,9 +2,6 @@
 // © barrett38
 study(title="Stochastic Extremes", shorttitle="Stcohastic Extremes", overlay=true, resolution="")
 
-// Original version is 83
-// 115 has Jakes Code
-
 // STOCHASTIC
 stochLevel = input(16, title="Stoch Level, Default at 16", minval=1, step=1)
 stoch_low = 35 - stochLevel
