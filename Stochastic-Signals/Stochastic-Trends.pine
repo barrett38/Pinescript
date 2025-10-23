@@ -20,6 +20,6 @@ extreme_low = k[1] < d[1] and k > d and (k < stoch_low or d < stoch_low) and clo
 plotshape(extreme_low, style = shape.triangleup, color = color.new(#26A69A, 0), location = location.belowbar, size = size.small)
 alertcondition(extreme_low, title = 'Stoch Extreme Low', message = 'BUY low - {{ticker}}, {{interval}} / Stop @15 PiP\'s + Spread')
 
-extreme_high = d[1] < k[1] and d > k and (k > stoch_high or d > stoch_high) and close < out
+extreme_high = d[1] > k[1] and d < k and (k > stoch_high or d > stoch_high) and close < out
 plotshape(extreme_high, style = shape.triangledown, color = color.new(#EF5350, 0), location = location.abovebar, size = size.small)
 alertcondition(extreme_high, title = 'Stoch Extreme High', message = 'SELL high - {{ticker}}, {{interval}} / Stop @15 PiP\'s + Spread')
